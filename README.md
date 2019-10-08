@@ -6,11 +6,13 @@ Note. PWA ready tapi BELUM diset mode PWA untuk menghindari cache saat developme
 ## ToDo MVP
 
 1. Mockup UI
+
     [x] Login
     [x] Dashboard (search + list)
     [ ] Detail logger
 
 2. Auth -> need backend
+
     [ ] Login, simpan sesi, Logout
     [ ] Dashboard
     [ ] Search & Detail
