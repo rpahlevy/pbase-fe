@@ -12,7 +12,8 @@ const routes = [
     path: '/',
     component: () => import('layouts/master.vue'),
     children: [
-      { path: '/dashboard', component: () => import('pages/main/dashboard.vue') }
+      { path: '/dashboard', component: () => import('pages/main/dashboard.vue') },
+      { path: '/logger/:sn', component: () => import('pages/main/logger.vue') }
     ]
   }
 ]
