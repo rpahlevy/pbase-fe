@@ -7,7 +7,7 @@
         v-model='keyword'>
 
         <template v-slot:append>
-          <q-icon name='fas fa-search' />
+          <q-icon name='search' />
         </template>
       </q-input>
     </div>
@@ -27,7 +27,7 @@
                 </div>
                 <div class='q-ml-auto'>
                   <span class='text-subtitle-2 text-blue-grey-5 q-mr-xs'>100%</span>
-                  <q-icon name='fas fa-circle' class='text-green' />
+                  <q-icon name='lens' class='text-green' />
                 </div>
               </div>
 
