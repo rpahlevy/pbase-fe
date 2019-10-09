@@ -1,20 +1,10 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          @click="leftDrawerOpen = !leftDrawerOpen"
-          icon="menu"
-          aria-label="Menu"
-        />
-
         <q-toolbar-title>
           primabase Cloud
         </q-toolbar-title>
-
         <div></div>
       </q-toolbar>
     </q-header>

@@ -1,6 +1,22 @@
 # PrimaBase PWA (primabase-fe)
 
-A Quasar Framework app
+Front End PWA untuk prima base.
+Note. PWA ready tapi BELUM diset mode PWA untuk menghindari cache saat development.
+
+## ToDo MVP
+
+1. Mockup UI
+
+    [x] Login
+    [x] Dashboard (search + list)
+    [ ] Detail logger
+
+2. Auth -> need backend
+
+    [ ] Login, simpan sesi, Logout
+    [ ] Dashboard
+    [ ] Search & Detail
+    [ ] Manage api token
 
 ## Install the dependencies
 ```bash

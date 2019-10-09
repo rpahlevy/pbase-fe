@@ -34,7 +34,7 @@
                   v-model='password'
                 />
 
-                <q-toggle v-model="save_login" label="Simpan login" />
+                <q-toggle v-model="save_login" label="Simpan sesi login" />
 
                 <div class='row justify-center q-mt-lg'>
                   <q-btn
