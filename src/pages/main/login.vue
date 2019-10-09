@@ -6,8 +6,7 @@
         <template>
           <div class="row justify-center">
             <div class="col-10 col-sm-5 col-md-4 col-lg-2">
-              <h1 class='text-h4 q-mt-none q-mb-none'>Selamat datang</h1>
-              <p class="text-subtitle1 q-mb-xl">Silahkan LOGIN untuk melanjutkan</p>
+              <h1 class='text-h4 q-mt-none q-mb-none'>Login</h1>
 
               <q-form
                 @submit.prevent="handleLogin"

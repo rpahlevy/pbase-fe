@@ -99,8 +99,8 @@ module.exports = function (ctx) {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {}, // only for NON InjectManifest
       manifest: {
-        // name: 'PrimaBase PWA',
-        // short_name: 'PrimaBase PWA',
+        name: 'primabase Cloud',
+        short_name: 'primabase Cloud',
         // description: 'A Quasar Framework app',
         display: 'standalone',
         orientation: 'portrait',

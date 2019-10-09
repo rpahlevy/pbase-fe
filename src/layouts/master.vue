@@ -3,16 +3,40 @@
     <q-header>
       <q-toolbar>
         <q-toolbar-title>
-          Prima Base PWA
+          primabase Cloud
         </q-toolbar-title>
-
-        <q-btn
-          flat
-          icon="fas fa-ellipsis-v"
-          aria-label="Menu"
-        />
+        <div></div>
       </q-toolbar>
     </q-header>
+
+    <q-drawer
+      v-model="leftDrawerOpen"
+      show-if-above
+      bordered
+      content-class="bg-grey-2"
+    >
+      <q-list>
+        <q-item-label header>&nbsp;</q-item-label>
+        <q-item clickable tag="a" target="_blank" href="/lokasi">
+          <q-item-section avatar>
+            <q-icon name="room" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Lokasi</q-item-label>
+            <q-item-label caption>Pos Pengamatan</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item clickable tag="a" target="_blank" href="/logger">
+          <q-item-section avatar>
+            <q-icon name="speaker_phone" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Logger</q-item-label>
+            <q-item-label caption>primabot</q-item-label>
+          </q-item-section>
+        </q-item>
+      </q-list>
+    </q-drawer>
 
     <q-page-container>
       <router-view />
