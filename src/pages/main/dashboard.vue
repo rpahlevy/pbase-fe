@@ -2,8 +2,7 @@
   <q-page class='q-pa-sm'>
     <div class='row justify-center q-my-md'>
       <q-input
-        outlined
-        label='Cari SN logger'
+        placeholder='1902-3'
         v-model='keyword'>
 
         <template v-slot:append>
@@ -14,7 +13,7 @@
     <div class='row'>
       <div v-for='i in 10' class='col-12 col-sm-6 col-md-4 col-lg-3' :key='i'>
         <router-link :to="'/logger/1102-'+ i" class='link-nodecor'>
-          <q-card flat class='q-ma-sm'>
+          <q-card flat bordered class='q-ma-sm'>
             <q-card-section>
               <div class='flex justify-between items-start q-mb-sm'>
                 <div>
