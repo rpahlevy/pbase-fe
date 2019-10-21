@@ -1,37 +1,49 @@
 <template>
-  <q-page class='q-pa-sm'>
-    <div class='row justify-center q-my-md'>
-      <q-input
-        placeholder='1902-3'
-        v-model='keyword'>
+  <q-page class='q-px-sm'>
+    <q-input
+      outlined
+      v-model='keyword'
+      placeholder='1902-3'
+      class='text-h5 q-my-md'>
 
-        <template v-slot:append>
-          <q-icon name='search' />
-        </template>
-      </q-input>
-    </div>
-    <div class='row'>
-      <div v-for='i in 10' class='col-12 col-sm-6 col-md-4 col-lg-3' :key='i'>
+      <template v-slot:append>
+        <q-icon name='search' />
+      </template>
+    </q-input>
+
+    <div class='ui horizontal divider'>LOGGERS (30/30)</div>
+
+    <div class='row q-col-gutter-md q-mb-md'>
+      <div v-for='i in 10' class='col-12 col-sm-6 col-md-3 col-lg-3' :key='i'>
         <router-link :to="'/logger/1102-'+ i" class='link-nodecor'>
-          <q-card flat bordered class='q-ma-sm'>
-            <q-card-section>
-              <div class='flex justify-between items-start q-mb-sm'>
+          <q-card flat bordered class=''>
+            <q-card-section class='text-h6 text-grey'>
+              <div class='flex items-start q-mb-md'>
                 <div>
-                  <h1 class='text-h6 text-blue-grey-8 text-bold q-mt-none q-mb-none'>
+                  <h1 class='text-h5 text-grey-9 text-bold q-mt-none q-mb-none'>
                     1102-{{ i }}
                   </h1>
-                  <p class='text-subtitle-2 text-blue-grey-5 q-my-none'>
+                  <p class='text-subtitle1 q-my-none'>
                     BBWS Sulawesi 2
                   </p>
                 </div>
+
                 <div class='q-ml-auto'>
-                  <span class='text-subtitle-2 text-blue-grey-5 q-mr-xs'>100%</span>
-                  <q-icon name='lens' class='text-green' />
+                  <span class='text-h5 q-mr-xs'>
+                    <span>20:30</span>
+                  </span>
                 </div>
               </div>
 
-              <div>
-                { chart }
+              <div class='flex items-start text-grey-9'>
+                <div class=''>
+                  <q-icon name='battery_full' />
+                  100%
+                </div>
+                <div class='q-ml-auto'>
+                  <q-icon name='signal_cellular_alt' />
+                  30/30
+                </div>
               </div>
             </q-card-section>
           </q-card>

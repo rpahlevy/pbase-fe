@@ -18,7 +18,7 @@
     >
       <q-list>
         <q-item-label header>&nbsp;</q-item-label>
-        <q-item clickable tag="a" target="_blank" href="/lokasi">
+        <q-item clickable tag="a" to="/lokasi">
           <q-item-section avatar>
             <q-icon name="room" />
           </q-item-section>
@@ -27,7 +27,7 @@
             <q-item-label caption>Pos Pengamatan</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable tag="a" target="_blank" href="/logger">
+        <q-item clickable tag="a" to="/dashboard">
           <q-item-section avatar>
             <q-icon name="speaker_phone" />
           </q-item-section>
