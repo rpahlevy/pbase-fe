@@ -1,6 +1,11 @@
 <template>
   <div id="q-app" class=''>
-    <router-view />
+    <div v-if="$auth.ready()">
+      <router-view />
+    </div>
+    <div v-else>
+      Loading...
+    </div>
   </div>
 </template>
 

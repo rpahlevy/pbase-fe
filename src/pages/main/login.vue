@@ -82,24 +82,28 @@ export default {
 
       this.submitting = true
 
-      setTimeout(() => {
-        this.submitting = false
+      this.$auth.login({
+        headers: {
+          'Authorization': 'Basic ' + window.btoa(this.username + ':' + this.password)
+        },
+        rememberMe: this.save_login,
+        success (res) {
+          var response = res.data
+          if (response.status === '200') {
 
-        if (this.username !== 'adem' || this.password !== 'adem') {
-          this.$q.notify({
-            position: 'bottom',
-            color: 'red-5',
-            textColor: 'white',
-            icon: 'warning',
-            message: 'Username / password salah',
-            timeout: 1000
-          })
-          // this.resetForm(false)
-          return
+          }
+          this.submitting = false
+        },
+        error (e) {
+          console.log(e)
+          this.submitting = false
+        },
+        makeRequest: false,
+        fetchUser: false,
+        redirect: {
+          path: '/dashboard'
         }
-
-        this.$router.push({ path: '/dashboard' })
-      }, 1500)
+      })
     },
 
     resetForm (resetUsername) {
